@@ -1,377 +1,349 @@
-/*Google Fonts Roboto Slab & Open San Integration */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto+Slab:300,400,700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-/*Global CSS*/
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto Slab', serif;
-}
-p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
-}
-.fa {
-	transition: 0.5s;
-}
-.fa:hover {
-	transform: rotate(360deg);
-}
-.hignlight {
-	text-transform: uppercase;
-	color: #43a906; 
-}
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-/*Header Section*/
-header {
-	background: #fbfbfb;
-	border-radius: 5px;
-	border-bottom: 1px solid #f2f2f2;
-	padding: 7px 0px;
-}
-.header-top p {
-	display: inline-block;
-	font-size: 11px;
-	width: 48%;
-	float: left;
-	margin-bottom: 0px;
-	font-weight: 600;
-}
-.header-top p i {
-	padding-right: 5px;
-}
-.header-top .fa {
-	color: #646464;
-	font-size: 11px;
-}
-.header-top .fa:hover {
-	color: #43a906;
-}
-.header-right ul {
-	display: inline-block;
-	float: right;
-	margin-bottom: 0px;
-	line-height: 0;
-	padding-top: 3px;}
-.header-right ul li {
-	list-style: none;
-	display: inline-block;
-}
-.header-right ul li a {
-    padding: 0px 3px;
-}
+		<!-- Font Awesome CSS File -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 
-/*Navbar Section*/
-.navbar .nav-item.active .nav-link {
-	color: #43a906 !important;
-}
-.navbar .nav-item .nav-link-custom {
-	font-size: 14px;
-	text-transform: uppercase;
-	box-sizing: border-box;
-	transition: auto;
-}
-.navbar .nav-item .nav-link-custom:hover {
-	color: #43a906!important;
-}
-.navbar ul li a,
-.navbar ul li a:after,
-.navbar ul li a:before {
-  transition: all 0.5s;
-}
-.navbar ul li a:hover {
-  color: #43a906;
-}
+		<!-- Theme Main CSS File -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Favicon Attach -->
+ 			<link rel="shortcut icon" type="image/x-icon" href="images/eco.png">
+
+		<title>Green Fair</title>
+	</head>
+	<body>
+		<!-- Header Section Start -->
+		<header>
+			<div class="container">
+				<div class="row header-top">
+					<div class="col-6">
+						<p><i class="fa fa-home"></i>Elephant Road, Dhaka-1205, Bangladesh</p>
+						<div class="margin-right"></div>
+						<p><i class="fa fa-phone"></i>+8801532-987039</p>
+					</div>
+					<div class="col-6 header-right">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook fa-custom"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter fa-custom"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus fa-custom"></i></a></li>
+							<li><a href="#"> <i class="fa fa-vimeo-square fa-custom"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Section End -->
 
 
-/* stroke */
-.navbar ul li a,
-.navbar ul li a {
-  position: relative;
-}
-.navbar ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: -17px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  color: transparent;
-  background: #43a906;
-  height: 5px;
-}
-.navbar ul li a:hover:after {
-  width: 100%;
-}
+		<!-- Navbar Section Start -->
+		<section>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Logo -->
+					<a class="navbar-brand" href="#">
+						<img src="images/logo.png" alt="Green Fair" class="img-fluid logo">
+					</a>
 
-/*Banner Section Start*/
-.banner {
-	background: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/green20.jpg);
-	background-size: cover;
-	background-position: center;
-	color: #fff;
-	min-height: 450px;
-}
-.banner h3 {
-	font-family: 'Open Sans', sans-serif;
-	margin-top: 70px;
-}
-.banner h1 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	letter-spacing: 2px;
-	font-size: 44px;
-	margin-bottom: 20px;
-}
-.banner p {
-	font-size: 11px;
-	margin-bottom: 30px;
-}
-.banner .btn-read {
-    display: block;
-	max-width: 12%;
-	margin: 17px auto 0;
-	text-transform: uppercase;
-	font-size: 14px;
-	padding: 10px 20px;
-	background: #101010;
-	text-decoration: none;
-	color: #fff;
-	border-radius: 5px;
-	transition: all 0.5s ease-in-out;
-}
-.banner .btn-read:hover {
-	background: #373636;
-	color: #fff;
-}
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-/*Welcome Section Start*/
-.welcome h3 {
-	font-weight: 600;
-	margin-top: 65px;
-	margin-bottom: 20px;
-}
-.welcome p {
-	margin-bottom: 50px;
-}
-.welcome img {
-    border: 2px solid #c4c4c4;
-    border-radius: 50%;
-    padding: 20px;
-    transition: 0.5s;
-}
-.welcome h6 {
-    margin: 30px auto 15px;
-    font-weight: 600;
-    transition: 0.5s;
-}
-.welcome h6:hover {
-	color: #43a906;
-	transform: scale(1.1);
-	cursor: pointer;
-}
-.welcome p {
-    font-size: 13px;
-    width: 86%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-.welcome img:hover {
-	background: #43a906;
-	transform: scale(1.1);
-	border-color: #43a906;
-	cursor: pointer;
-}
-
-/*Volunteer Section*/
-.volunteer {
-	background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/volunteer.jpg);
-	background-size: cover;
-	background-position: center;
-	color: #fff;
-	padding: 60px;
-}
-.volunteer h2 {
-	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
-	margin-bottom: 15px;
-}
-.volunteer .btn-join {
-	margin-left: 50%;
-	margin-top: 5%;
-	width: 140px;
-	text-transform: uppercase;
-	border: none;
-	padding: 10px;
-}
-.volunteer .btn-join:hover {
-	border: none;
-}
-.volunteer .btn-join:focus {
-	box-shadow: none;
-}
-.volunteer .btn-join:focus:active {
-	box-shadow: none !important;
-}
-
-/*Work Section*/
-.work h3 {
-	font-weight: 600;
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-.work p {
-	margin-bottom: 40px;
-}
-.work .btn-work {
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 10px 20px;
-    background: #f6f6f6;
-    text-decoration: none;
-    color: #6a6b6a;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-}
-.work .btn-work:hover {
-	background: #43a906;
-	color: #fff;
-}
-.work-item {
-	overflow: hidden;
-	padding: 3px 10px;
-}
-.work-item-internet {
-    width: 111%;
-}
-.work-item-keyboard {
-    width: 102.4%;
-}
-.work-item-fish {
-    width: 177%;
-}
-.work-item-green {
-    width: 101%;
-}
-.work-item-girl {
-	width: 138.5%;
-	margin-top: 3px;
-}
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link nav-link-custom" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom" href="#">Services</a>						
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom" href="#">About</a>							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom" href="#">Project</a>							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom" href="#">Achivement</a>							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom" href="#">Event</a>							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom btn-signup" href="#">Testimonial</a>					
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom btn-signup" href="#">Blog</a>					
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom btn-signup" href="#">Contact us</a>					
+						</li>
+					</ul>
+				</div>
+				</div>
+			</nav>
+		</section>		
+		<!-- Navbar Section End -->
 
 
-/*Achivement Section*/
-.achivement {
-	background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/green6.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.achivement h3 {
-	font-weight: 600;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	color: #fff;
-	text-transform: uppercase;
-}
-.achivement p {
-	margin-bottom: 40px;
-	color: #fff;
-}
-.achivement-bottom h3 {
-	font-size: 26px;
-	text-align: center;
-	width: 32%;
-	margin: 0 auto;
-	margin-bottom: 15px;
-	margin-top: 10px;
-	padding-bottom: 15px;
-	border-bottom: 2px solid;
-	border-width: thin;
-}
-.achivement-bottom p {
-	text-align: center;
-	text-transform: uppercase;
-}
-.achivement-bottom img {
-	display: block;
-	margin: 0 auto;
-	width: 35%;
-}
+		<!-- Banner Section Start -->
+		<section class="banner py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center text-uppercase">
+						<h3>Protect</h3>
+						<h1>Nature the environment</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<a href="#" class="btn btn-read">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Banner Section End -->
 
-/*Event Section*/
-.event h3 {
-	font-weight: 600;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-	text-align: center;
-}
-.event-p1 {
-	text-align: center;
-	margin-bottom: 40px;
-}
-.event-body {
-	background: #eff0f2;
-	left: 15px;
-}
-.event-h-six {
-	text-align: center;
-	font-weight: 600;
-	margin-top: 30px;
-}
-.event-p2 {
-	text-align: center;
-	margin-bottom: 15px;
-}
-.event-p3 {
-	text-align: center;
-	width: 69%;
-	margin: 0 auto;
-}
-.btn-read-more-one {
-	display: block;
-	max-width: 36%;
-	margin: 30px auto;
-	text-transform: uppercase;
-	font-size: 14px;
-	padding: 10px 20px;
-	background: #43a906;
-	text-decoration: none;
-	color: #fff;
-	border-radius: 5px;
-	transition: all 0.3s ease-in-out;
-}
-.btn-read-more-one:hover {
-	background: #5bbf1f;
-	color: #fff;
-	cursor: pointer;
-}
-.btn-read-more-two {
-	display: block;
-	max-width: 36%;
-	margin: 17px auto 0;
-	text-transform: uppercase;
-	font-size: 14px;
-	padding: 10px 20px;
-	background: #101010;
-	text-decoration: none;
-	color: #fff;
-	border-radius: 5px;
-	transition: all 0.3s ease-in-out;
-}
-.btn-read-more-two:hover {
-	background: #373636;
-	color: #fff;
-}
-.image-mini {
-    margin-bottom: 34.1px;
-    margin-left: 13px;
-}
-.event-h-six-right {
-    margin-top: 22px !important;
-    display: inline-block;
-    margin-left: 25px;
-    font-weight: 600;
-}
-.event-p4 {
-	margin-left: 25px;
-	font-size: 12px;
-}
+
+		<!-- Welcome Section Start -->
+		<sectin class="welcome">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h3 class="text-uppercase">Welcome to Green fair</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md text-center">
+						<img src="images/eco.png" alt="">
+						<h6 class="text-uppercase welcome-hover">Eco system</h6>
+						<p>Lorem ipsum dolor sit amet, eu qui modo expetendis reformidans ex sit set appetere sententiae seo eum in simul homero.</p>
+					</div>
+					<div class="col-md text-center">
+						<img src="images/recycling.png" alt="">
+						<h6 class="text-uppercase">Eco  system</h6>
+						<p>Lorem ipsum dolor sit amet, eu qui modo expetendis reformidans ex sit set appetere sententiae seo eum in simul homero.</p>
+					</div>
+					<div class="col-md text-center">
+						<img src="images/water.png" alt="">
+						<h6 class="text-uppercase">Eco system</h6>
+						<p>Lorem ipsum dolor sit amet, eu qui modo expetendis reformidans ex sit set appetere sententiae seo eum in simul homero.</p>
+					</div>
+					<div class="col-md text-center">
+						<img src="images/solar.png" alt="">
+						<h6 class="text-uppercase">Eco system</h6>
+						<p>Lorem ipsum dolor sit amet, eu qui modo expetendis reformidans ex sit set appetere sententiae seo eum in simul homero.</p>
+					</div>
+				</div>
+			</div>
+		</sectin>
+		<!-- Welcome Section End -->
+
+
+		<!-- Volunteer Section Start -->
+		<section class="volunteer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Become a <span class="hignlight">volunteer</span></h2>
+						<p>Join Our Team And Help the world. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur.</p>
+					</div>
+					<div class="col-md-6">
+						<a href="#" class="btn btn-success btn-join">Joun us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Volunteer Section End -->
+
+
+		<!-- Work Section Start -->
+		<section class="work mb-5">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-12 text-center">
+						<h3 class="text-uppercase">Our latest work</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+						<a href="#" class="btn-work">Show all</a>
+						<a href="#" class="btn-work">Environment</a>
+						<a href="#" class="btn-work">Climate</a>
+						<a href="#" class="btn-work">Photography</a>
+						<a href="#" class="btn-work">Species</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-9 work-item">
+						<div class="row">
+							<div class="col-md-8 work-item">
+								<div>
+									<img src="images/green (8).jpg" alt="" class="work-item-internet">
+								</div>
+							</div>
+							<div class="col-md-4 work-item">
+								<div>
+									<img src="images/green (18).jpg" alt="" class="work-item-keyboard">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 work-item">
+								<div>
+									<img src="images/green (15).jpg" alt="" class="work-item-fish">
+								</div>
+							</div>
+							<div class="col-md-8 work-item">
+								<div>
+									<img src="images/green (10).jpg" alt="" class="work-item-green">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 work-item">
+						<img src="images/girl.jpg" alt="" class="work-item-girl">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Work Section End -->
+		
+
+		<!-- Achivement Section Start -->
+		<section class="achivement py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h3>Our achivement</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="row achivement-bottom">
+					<div class="col-md">
+						<img src="images/icon-tree.png" alt="">
+						<h3>1523</h3>
+						<p>Trees cut</p>
+					</div>
+					<div class="col-md">
+						<img src="images/icon-lost.png" alt="">
+						<h3>3,959</h3>
+						<p>Almost lost</p>
+					</div>
+					<div class="col-md">
+						<img src="images/icon-leaf.png" alt="">
+						<h3>5,559</h3>
+						<p>Trees saved</p>
+					</div>
+					<div class="col-md">
+						<img src="images/icon-charge.png" alt="">
+						<h3>5,559</h3>
+						<p>Bulbs collected</p>
+					</div>
+					<div class="col-md">
+						<img src="images/icon-cloud.png" alt="">
+						<h3>7,529</h3>
+						<p>Water level</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Achivement Section End -->
+
+
+		<!-- Event Section Start -->
+		<section class="event py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Latest event</h3>
+						<p class="event-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/tree.jpg" alt="">
+							</div>
+							<div class="col-md-6 event-body">
+								<h6 class="event-h-six">One Tree Thousand Hope</h6>
+								<p class="event-p2">15-16 May in Dhaka</p>
+								<p class="event-p3">Lorem ipsum dolor sit amet, consectetur adip scing elit. Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#" class="btn btn-read-more-one">Read more</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 event-body">
+								<h6 class="event-h-six">One Tree Thousand Hope</h6>
+								<p class="event-p2">15-16 May in Dhaka</p>
+								<p class="event-p3">Lorem ipsum dolor sit amet, consectetur adip scing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#" class="btn btn-read-more-two">Read more</a>
+							</div>
+							<div class="col-md-6">
+								<img src="images/hand-tree.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-3">
+								<img src="images/tob-mini.jpg" alt="" class="image-mini">
+							</div>
+							<div class="col-md-9">
+								<h6 class="event-h-six-right">Let’s plant 200 tree each...</h6>
+								<p class="event-p4">Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<img src="images/plant-mini.png" alt="" class="image-mini">
+							</div>
+							<div class="col-md-9">
+								<h6 class="event-h-six-right">Let’s plant 200 tree each...</h6>
+								<p class="event-p4">Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<img src="images/plant-mini-two.png" alt="" class="image-mini">
+							</div>
+							<div class="col-md-9">
+								<h6 class="event-h-six-right">Let’s plant 200 tree each...</h6>
+								<p class="event-p4">Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<img src="images/kochu-two.png" alt="" class="image-mini">
+							</div>
+							<div class="col-md-9">
+								<h6 class="event-h-six-right">Let’s plant 200 tree each...</h6>
+								<p class="event-p4">Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<img src="images/plant.png" alt="" class="image-mini">
+							</div>
+							<div class="col-md-9">
+								<h6 class="event-h-six-right">Let’s plant 200 tree each...</h6>
+								<p class="event-p4">Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Event Section End -->
+
+
+			
+		<!-- Optional JavaScript -->
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
